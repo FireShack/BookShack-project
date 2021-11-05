@@ -1,0 +1,214 @@
+html {
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0 0 0 0;
+    overflow-x: hidden;
+    color: #b9b9b9;
+}
+
+header {
+    background-image: url(/images/rhema-kallianpur-2W3bDp7K1oQ-unsplash.jpg);
+    height: 37rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.icono-brand {
+    height: 4rem;
+}
+
+.titulo-header {
+    margin-left: 2rem;
+}
+
+.nav-link {
+    font-size: 18px;
+}
+
+.navbar-brand {
+    font-size: 35px !important;
+    border-radius: 5px;
+    padding: 15px 15px 0 15px !important;
+}
+
+.nav-oscuro {
+    background-color: rgba(0, 0, 0, 0.795) !important;
+}
+
+.navbar-collapse {
+    padding: 5px !important;
+}
+
+.nav-transp {
+    background-color: rgba(0, 0, 0, 0.411);
+    border-radius: 5px;
+}
+
+.dropdown-item:hover {
+    background-color: rgba(0, 0, 0, 0.288) !important;
+}
+
+.dropdown-menu {
+    background-color: rgba(0, 0, 0, 0.575) !important;
+}
+
+.btn-nav {
+    padding-right: 10px !important;
+    width: 10rem !important;
+}
+
+.container-recomendaciones {
+    margin-top: 5rem;
+    background-color: #4361ee;
+    height: 5rem;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 2px 1px rgb(0, 0, 0);
+}
+
+.container-misterio {
+    margin-top: 5rem;
+    background-color: #7209b7;
+    height: 5rem;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 2px 1px rgb(0, 0, 0);
+}
+
+.container-scifi {
+    margin-top: 5rem;
+    background-color: #b5179e;
+    height: 5rem;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 2px 1px rgb(0, 0, 0);
+}
+
+.container-terror {
+    margin-top: 5rem;
+    background-color: #001233;
+    height: 5rem;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 2px 1px rgb(0, 0, 0);
+}
+
+.col-beneficios img {
+    height: 2rem;
+}
+
+.col-beneficios div {
+    height: 3rem;
+    border-bottom: 1px solid rgb(61, 61, 61);
+}
+
+.card-libros {
+    height: 2rem;
+}
+
+.card button {
+    transition: .5s;
+}
+
+.card {
+    transition: .5s;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.card .card-body img {
+    height: 1.3rem;
+    margin-left: .2rem;
+    transition: .5s;
+}
+
+.icono-cart:hover {
+    transform: translateX(5px);
+}
+
+.btn-cart {
+    height: 2.5rem;
+}
+
+.btn {
+    transition: .5s;
+}
+
+.btn:hover {
+    background-color: #0353a4 !important;
+    color: white !important;
+}
+
+.card-numero {
+    margin: 1rem;
+}
+
+body::-webkit-scrollbar {
+    width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #fffefe;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #0353a4;
+    /* color of the scroll thumb */
+    border-radius: 20px;
+    /* roundness of the scroll thumb */
+    border: 1px solid rgb(184, 184, 184);
+    /* creates padding around scroll thumb */
+}
+
+.container-footer {
+    border-top: 2px solid #0353a4;
+    height: 10rem;
+}
+
+.icons-footer img {
+    height: 2rem;
+    display: flex !important;
+    justify-content: space-around !important;
+}
+
+.icono-footer {
+    height: 6rem !important;
+    margin: -2rem;
+    border: 3px solid rgb(128, 127, 127);
+    border-radius: 50px;
+    padding: 10px;
+}
+
+@media (max-width: 425px) {
+    .col-beneficios div {
+        height: 3rem;
+        padding: 0 0px 1rem 0px;
+        border-bottom: 1px solid rgb(61, 61, 61);
+    }
+    .col-beneficios img {
+        justify-content: center;
+        align-items: center;
+        height: 2rem;
+    }
+}
