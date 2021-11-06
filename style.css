@@ -8,8 +8,32 @@ body {
     color: #b9b9b9;
 }
 
-.vertical {
-    margin-left: -.7rem !important;
+.btn-member-inhabilita {
+    display: none !important;
+}
+
+.btn-member {
+    transform: rotate(-90deg);
+    margin-bottom: 2.5rem;
+    margin-right: -3.5rem !important;
+}
+
+.btn-animacion {
+    animation: animacion-btn-member !important;
+    animation-iteration-count: infinite !important;
+    animation-duration: 2s !important;
+}
+
+@keyframes animacion-btn-member {
+    0% {
+        color: rgb(255, 0, 0) !important;
+    }
+    50% {
+        color: blue !important;
+    }
+    100% {
+        color: white !important;
+    }
 }
 
 header {
@@ -49,14 +73,16 @@ header {
 .nav-transp {
     background-color: rgba(0, 0, 0, 0.411);
     border-radius: 5px;
+    backdrop-filter: blur(5px);
 }
 
 .dropdown-item:hover {
-    background-color: rgba(0, 0, 0, 0.288) !important;
+    background-color: rgba(151, 148, 148, 0.137) !important;
 }
 
 .dropdown-menu {
     background-color: rgba(0, 0, 0, 0.575) !important;
+    backdrop-filter: blur(5px);
 }
 
 .btn-nav {
@@ -125,19 +151,23 @@ header {
     border-bottom: 1px solid rgb(61, 61, 61);
 }
 
+.card-libros-section {
+    transition: .5s;
+}
+
 .card-libros {
     height: 2rem;
 }
 
-.card button {
+.card-libros-section button {
     transition: .5s;
 }
 
-.card {
+.card-libros-section {
     transition: .5s;
 }
 
-.card:hover {
+.card-libros-section:hover {
     transform: scale(1.1);
 }
 
@@ -212,13 +242,18 @@ body::-webkit-scrollbar-thumb {
         align-items: center;
         height: 2rem;
     }
-    .card {
+    .card-libros-section {
         margin: .5rem;
     }
     header {
         height: 43rem;
     }
-    .card:hover {
+    .card-libros-section:hover {
         transform: scale(1.05);
+    }
+    .btn-member {
+        transform: rotate(90deg);
+        margin-bottom: 2.5rem;
+        margin-left: -3.7rem !important;
     }
 }
