@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Book Store</title>
+    <title>Book Shack</title>
 
     <link href="/images/content-book-2_icon-icons.com_48648.png" rel="shortcut icon" />
     <!-- Required meta tags -->
@@ -20,8 +20,8 @@
     <header class="d-flex">
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top p-3">
             <div class="container-fluid">
-                <a class="navbar-brand d-none d-xs-none d-md-block" href="index.html">Book Store <img src="/images/content-book-2_icon-icons.com_48648.png" class="icono-brand" alt=""> </a>
-                <a class="navbar-brand d-block d-md-none d-xs-block" href="index.html">BS <img src="/images/content-book-2_icon-icons.com_48648.png" class="icono-brand" alt=""> </a>
+                <a class="navbar-brand d-none d-sm-none d-md-block" href="index.html">Book Shack <img src="/images/content-book-2_icon-icons.com_48648.png" class="icono-brand" alt=""> </a>
+                <a class="navbar-brand d-block d-md-none d-sm-block" href="index.html">BS <img src="/images/content-book-2_icon-icons.com_48648.png" class="icono-brand" alt=""> </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                        <span class="navbar-toggler-icon"></span>
                    </button>
@@ -36,10 +36,16 @@
                                    Books
                                </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li>
+                                <p class="dropdown-item text-center text-white">Generes</p>
+                            </li>
+                            <div class="dropdown-divider bg-white"></div>
                             <li><a class="dropdown-item  text-white" href="#start">Recomendations</a></li>
                             <li><a class="dropdown-item  text-white" href="#misterio">Mistery</a></li>
                             <li><a class="dropdown-item  text-white" href="#scifi">Sci-FI</a></li>
                             <li><a class="dropdown-item  text-white" href="#terror">Terror</a></li>
+                            <li><a class="dropdown-item  text-white" href="#terror">New realeses</a></li>
+                            <li><a class="dropdown-item  text-white" href="#terror">Kids</a></li>
 
                         </ul>
                     </li>
@@ -61,6 +67,32 @@
             </div>
         </div>
     </header>
+
+    <div class="container-fluid d-flex justify-content-start vertical fixed-bottom">
+
+        <!--Boton que activa el offcanvas-->
+        <a href="#offcanvas" class="btn btn-outline-dark" data-bs-toggle="offcanvas" role="button">Membership</a>
+
+        <!--offcanvas en si-->
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas">
+
+            <!--Titulo y boton de cierre-->
+            <div class="offcanvas-header">
+                <h3 class="offcanvas-title">Title</h3>
+                <button class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+            </div>
+
+            <!--Cuerpo-->
+            <div class="offcanvas-body">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam perferendis ratione aspernatur adipisci commodi molestiae. </p>
+                <button class="btn btn-primary" data-bs-dismiss="offcanvas">Aceptar</button>
+            </div>
+        </div>
+    </div>
+
+
+
+
     <div id="start"></div>
     <div class="row d-flex mt-5 d-none d-sm-none d-md-block">
         <div class="col col-beneficios d-flex justify-content-around">
@@ -106,20 +138,15 @@
         </div>
     </div>
 
-
-
-
-
-    <div class="container container-recomendaciones ">
-        <div class="row">
-            <h1>Our recomendations</h1>
+    <div class="container mt-5">
+        <div class="container container-recomendaciones ">
+            <div class="row">
+                <h1>Our recomendations</h1>
+            </div>
         </div>
 
-    </div>
 
-
-    <div class="container mt-5">
-        <div class="row d-flex">
+        <div class="row d-flex mt-5">
 
 
             <div class="col-md-3 col-6">
@@ -173,7 +200,6 @@
             <div class="row">
                 <h1>Mistery books</h1>
             </div>
-
         </div>
 
         <div class="row mt-5">

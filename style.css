@@ -8,6 +8,10 @@ body {
     color: #b9b9b9;
 }
 
+.vertical {
+    margin-left: -.7rem !important;
+}
+
 header {
     background-image: url(/images/rhema-kallianpur-2W3bDp7K1oQ-unsplash.jpg);
     height: 42rem;
@@ -174,11 +178,8 @@ body::-webkit-scrollbar-track {
 
 body::-webkit-scrollbar-thumb {
     background-color: #0353a4;
-    /* color of the scroll thumb */
     border-radius: 20px;
-    /* roundness of the scroll thumb */
     border: 1px solid rgb(184, 184, 184);
-    /* creates padding around scroll thumb */
 }
 
 .container-footer {
@@ -210,5 +211,14 @@ body::-webkit-scrollbar-thumb {
         justify-content: center;
         align-items: center;
         height: 2rem;
+    }
+    .card {
+        margin: .5rem;
+    }
+    header {
+        height: 43rem;
+    }
+    .card:hover {
+        transform: scale(1.05);
     }
 }
