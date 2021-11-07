@@ -256,6 +256,9 @@ body::-webkit-scrollbar-thumb {
     header {
         height: 43rem;
     }
+    body {
+        overflow-y: hidden !important;
+    }
     .card-libros-section:hover {
         transform: scale(1.05);
     }
