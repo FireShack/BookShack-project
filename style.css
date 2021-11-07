@@ -59,7 +59,7 @@ header {
 .navbar-brand {
     font-size: 35px !important;
     border-radius: 5px;
-    padding: 15px 15px 0 15px !important;
+    /* padding: 15px 15px 0 15px !important; */
 }
 
 .nav-oscuro {
@@ -231,11 +231,12 @@ body::-webkit-scrollbar-thumb {
     padding: 10px;
 }
 
-.offcanvas {
-    backdrop-filter: blur(5px);
-}
 
-.offcanvas-header {
+/* .offcanvas {
+    backdrop-filter: blur(5px);
+} */
+
+.offcanvas-header-cart {
     margin-top: -5rem;
 }
 
