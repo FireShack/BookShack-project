@@ -16,6 +16,10 @@ header {
     background-size: cover;
 }
 
+.offcanvas {
+    overflow-y: scroll;
+}
+
 .btn-member-inhabilita {
     display: none !important;
 }
