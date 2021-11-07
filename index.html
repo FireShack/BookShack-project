@@ -19,12 +19,17 @@
 <body>
     <header class="d-flex">
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top p-3">
-            <div class="container-fluid">
-                <a class="navbar-brand d-none d-sm-none d-md-block" href="index.html">Book Shack <img src="/images/content-book-2_icon-icons.com_48648.png" class="icono-brand" alt=""> </a>
-                <a class="navbar-brand d-block d-md-none d-sm-block" href="index.html">BS <img src="/images/content-book-2_icon-icons.com_48648.png" class="icono-brand" alt=""> </a>
+            <div class="container-fluid d-flex justify-content-between">
+                <a class="navbar-brand d-none d-xs-none d-lg-block" href="index.html">Book Store <img src="/images/content-book-2_icon-icons.com_48648.png" class="icono-brand" alt=""> </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                       <span class="navbar-toggler-icon"></span>
-                   </button>
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand d-block d-lg-none d-xs-block" href="index.html">BS <img src="/images/content-book-2_icon-icons.com_48648.png" class="icono-brand" alt=""> </a>
+
+
+                <button href="#offcanvas-2" data-bs-toggle="offcanvas" class="btn boton-nav-offcanvas-sm btn-outline-light d-none d-lg-none d-sm-block"> Cart <img src="/images/1490129392-rounded28_82189.png" alt="" class=" btn-cart"> </button>
+                <button href="#offcanvas-3" data-bs-toggle="offcanvas" class="btn boton-nav-offcanvas-sm btn-outline-light d-block d-md-none d-sm-block"> Cart <img src="/images/1490129392-rounded28_82189.png" alt="" class=" btn-cart"> </button>
+
             </div>
             <div class="collapse navbar-collapse nav-transp" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -53,13 +58,34 @@
                         <a class="nav-link active" href="#" tabindex="-1" aria-disabled="false">About</a>
                     </li>
                 </ul>
-                <form class="d-flex btn-nav">
-                    <button class="btn btn-outline-light w-100"> Cart <img src="/images/1490129392-rounded28_82189.png" alt="" class=" btn-cart"> </button>
-                </form>
+
+
+                <div class="d-flex btn-nav">
+
+
+                    <!--Boton que activa el offcanvas-->
+                    <button href="#offcanva" data-bs-toggle="offcanvas" class="btn boton-nav-offcanvas btn-outline-light w-100 d-none d-sm-none d-lg-block"> Cart <img src="/images/1490129392-rounded28_82189.png" alt="" class=" btn-cart"> </button>
+
+                    <!--offcanvas en si-->
+                    <div class="offcanvas offcanvas-bottom text-white bg-transparent d-flex align-content-around justify-content-around" tabindex="-1" id="offcanva" style="height: 30rem;">
+
+                        <!--Titulo y boton de cierre-->
+                        <div class="offcanvas-header text-center d-flex">
+
+                            <h3 class="offcanvas-title d-flex">Your books selection</h3>
+                            <button class="btn-close bg-white text-reset" data-bs-dismiss="offcanvas"></button>
+                        </div>
+
+                        <!--Cuerpo-->
+                        <div class="">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam perferendis ratione aspernatur adipisci commodi molestiae. </p>
+                        </div>
+
+                        <button class="btn btn-primary" data-bs-dismiss="offcanvas">Aceptar</button>
+                    </div>
+                </div>
             </div>
         </nav>
-
-
         <div class="row d-flex">
             <div class="col justify-self-center align-self-center text-white ">
                 <h1 class="titulo-header ">One book, one life.</h1>
@@ -67,6 +93,45 @@
             </div>
         </div>
     </header>
+
+
+    <div class="d-flex d-none d-lg-none d-sm-block">
+
+        <div class="offcanvas offcanvas-bottom text-white bg-transparent d-flex align-content-around justify-content-around" tabindex="-1" id="offcanvas-2" style="height: 30rem;">
+
+            <!--Titulo y boton de cierre-->
+            <div class="offcanvas-header text-center d-flex">
+
+                <h3 class="offcanvas-title d-flex">Your books selection</h3>
+                <button class="btn-close bg-white text-reset" data-bs-dismiss="offcanvas"></button>
+            </div>
+
+            <!--Cuerpo-->
+            <div class="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam perferendis ratione aspernatur adipisci commodi molestiae. </p>
+            </div>
+            <button class="btn btn-primary" data-bs-dismiss="offcanvas">Aceptar</button>
+        </div>
+    </div>
+
+    <div class="d-flex d-block d-md-none d-sm-block">
+
+        <div class="offcanvas offcanvas-bottom text-white bg-transparent d-flex align-content-around justify-content-around" tabindex="-1" id="offcanvas-3" style="height: 30rem;">
+
+            <!--Titulo y boton de cierre-->
+            <div class="offcanvas-header text-center d-flex">
+
+                <h3 class="offcanvas-title d-flex">Your books selection</h3>
+                <button class="btn-close bg-white text-reset" data-bs-dismiss="offcanvas"></button>
+            </div>
+
+            <!--Cuerpo-->
+            <div class="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam perferendis ratione aspernatur adipisci commodi molestiae. </p>
+            </div>
+            <button class="btn btn-primary" data-bs-dismiss="offcanvas">Aceptar</button>
+        </div>
+    </div>
 
     <div class="container-fluid container-member d-flex justify-content-end fixed-bottom">
 
@@ -111,8 +176,8 @@
                     </div>
                 </div>
                 <div class="card mt-3">
-                    <div class="card-header">
-                        <h4>Book lover plan <span class="badge bg-dark">Only €8</span></h4>
+                    <div class="card-header bg-dark ">
+                        <h4 class="text-white">Book lover plan <span class="badge bg-light text-dark p-3">Only €8</span></h4>
                     </div>
                     <div class="card-body">
 
@@ -131,8 +196,8 @@
                             <p>-Signed books</p>
                         </div>
                     </div>
-                    <div class="card-footer text-muted">
-                        <input type="submit" class="btn btn-outline-dark w-100" value="Suscribe">
+                    <div class="card-footer bg-dark">
+                        <input type="submit" class="btn btn-outline-light w-100" value="Suscribe">
                     </div>
                 </div>
             </div>
@@ -434,7 +499,7 @@
             <div class="col-4  d-flex justify-content-around align-items-center">
 
 
-                <div class="icons-footer ">
+                <div class="icons-footer">
                     <a href=" "><img src="/icons/instagram-icon.png " alt=" "></a>
                 </div>
                 <div class="icons-footer ">
@@ -471,11 +536,11 @@
                 <h4>Follow us</h4>
             </div>
             <div class="col-4 text-center">
-                <h4>Book Store</h4>
+                <h4>Book Shack</h4>
             </div>
         </div>
 
-        <div class="row mt-5">
+        <div class="row mt-5 d-flex justify-content-between">
 
             <div class="col-4  d-flex justify-content-around align-items-center">
 
@@ -492,7 +557,7 @@
 
             </div>
 
-            <div class="col-4 d-flex justify-content-around align-items-center  ">
+            <div class="col-4 d-flex justify-content-center  align-items-center  ">
                 <a href=" "><img src="/images/content-book-2_icon-icons.com_48648.png " class="icono-footer " alt=" "></a>
             </div>
 
