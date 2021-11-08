@@ -16,6 +16,15 @@ header {
     background-size: cover;
 }
 
+body a {
+    text-decoration: none !important;
+    color: black;
+}
+
+body a:hover {
+    color: black;
+}
+
 .offcanvas {
     overflow-y: scroll;
 }
