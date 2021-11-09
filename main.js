@@ -11,7 +11,7 @@ const btn_offcanvas_cart = document.querySelector('.boton-nav-offcanvas')
 const btn_offcanvas_cart_sm = document.querySelector('.boton-nav-offcanvas-sm')
 
 window.addEventListener('scroll', scroll)
-window.addEventListener('scroll', btn_on)
+    // window.addEventListener('scroll', btn_on)
 
 
 
@@ -23,16 +23,16 @@ function scroll() {
         navbar.classList.add('nav-oscuro')
         dropdownMenu.classList.add('nav-oscuro')
         navbarCollapse.classList.remove('nav-transp')
-        btn_offcanvas_cart.classList.remove('disabled')
-        btn_offcanvas_cart_sm.classList.remove('disabled')
+            // btn_offcanvas_cart.classList.remove('disabled')
+            // btn_offcanvas_cart_sm.classList.remove('disabled')
             // offcanvas.classList.remove('d-none')
 
 
     } else {
         navbar.classList.remove('nav-oscuro')
         navbarCollapse.classList.add('nav-transp')
-        btn_offcanvas_cart.classList.add('disabled')
-        btn_offcanvas_cart_sm.classList.add('disabled')
+            // btn_offcanvas_cart.classList.add('disabled')
+            // btn_offcanvas_cart_sm.classList.add('disabled')
             // offcanvas.classList.add('d-none')
 
     }
