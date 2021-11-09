@@ -9,9 +9,14 @@ const titulo_header = document.querySelector('.titulo-header')
 const offcanvas = document.querySelector('.offcanvas')
 const btn_offcanvas_cart = document.querySelector('.boton-nav-offcanvas')
 const btn_offcanvas_cart_sm = document.querySelector('.boton-nav-offcanvas-sm')
+const btn_close = document.querySelector('#btn-close')
+const burbuja = document.querySelector('#fila-burbuja')
+
 
 window.addEventListener('scroll', scroll)
     // window.addEventListener('scroll', btn_on)
+btn_close.addEventListener('click', cerrar)
+burbuja.addEventListener('click', cerrar)
 
 
 
@@ -50,5 +55,11 @@ function btn_on() {
 
     if (ubicacion.top <= -2200) {
         btn_member.classList.add('btn-member-inhabilita')
+    }
+}
+
+function cerrar() {
+    if (btn_close) {
+        burbuja.classList.add('d-none')
     }
 }

@@ -291,21 +291,13 @@ body::-webkit-scrollbar-thumb {
     height: 5rem;
     background-color: #001233;
     width: 20rem;
-    margin-top: -1rem;
     margin-left: 2rem;
-    border-radius: 2rem 2rem 2rem 0rem;
+    border-radius: .5rem 0.5rem 0.5rem 0rem;
     box-shadow: 5px 5px rgb(0, 0, 0);
     display: flex;
     align-items: center;
 }
 
-.burbuja div {
-    display: flex;
-    justify-content: center;
-    transform: rotateZ(-90deg);
-    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-    position: absolute;
-    width: 4rem;
-    height: 2rem;
-    background-color: #9daecf;
+.container-pop {
+    margin-top: 3rem;
 }
